@@ -1,0 +1,78 @@
+.display-box {
+  width: 60%;
+  height: 8%;
+  border-radius: 5px;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 3s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+
+.container {
+  text-align: center;
+  margin-top: 23px;
+  padding-bottom: 100px;
+  background-color: #d2d5e9;
+}
+table {
+  margin-top: 50px;
+}
+#result {
+  font-size: 20px;
+}
+
+input[type="button"] {
+  font-family: sans-serif;
+  background-color: #a84675;
+  color: white;
+  border: solid rgb(175, 153, 153) 0.5px;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  margin: 3%;
+  font-size: 30px;
+}
+.calculator {
+  border-radius: 1em;
+  height: 380px;
+  width: 400px;
+}
+#btn {
+  background-color: #d70d5e;
+}
+input:active[type="button"] {
+  background: #e5e5e5;
+}
+.calculator {
+  padding: 10px;
+  border-radius: 1em;
+  height: 380px;
+  width: 400px;
+  margin: auto;
+  background-color: #191b28;
+  background-image: url("./sparkles.webp");
+  background: cover;
+  box-shadow: rgba(6, 6, 6, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 8px 8px;
+}
