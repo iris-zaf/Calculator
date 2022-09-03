@@ -53,6 +53,11 @@ input[type="button"] {
   outline: none;
   margin: 3%;
   font-size: 30px;
+  cursor: pointer;
+  transition: background-color 2s;
+}
+input:hover[type="button"] {
+  background-color: #4c042d;
 }
 .calculator {
   border-radius: 1em;
@@ -62,8 +67,8 @@ input[type="button"] {
 #btn {
   background-color: #d70d5e;
 }
-input:active[type="button"] {
-  background: #e5e5e5;
+#btn1 {
+  background-color: #d70d5e;
 }
 .calculator {
   padding: 10px;
